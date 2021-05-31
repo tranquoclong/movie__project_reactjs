@@ -8,7 +8,7 @@ function New({ movie, history }) {
     history.push(`/new-detail/${movie.id}`);
   };
   return (
-    <div className="card card--list" onClick={handleClick}>
+    <div className="cards card--list" onClick={handleClick}>
       <div className="row">
         <div className="col-12 col-sm-4">
           <div className="card__cover">

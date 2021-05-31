@@ -135,7 +135,7 @@ class DetailMovie extends Component {
                 {/* end title */}
                 {/* content */}
                 <div className="col-12 col-xl-6">
-                  <div className="card card--details">
+                  <div className="cards card--details">
                     <div className="row">
                       {/* card cover */}
                       <div className="col-12 col-sm-4 col-md-4 col-lg-3 col-xl-5">

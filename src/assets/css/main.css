@@ -917,6 +917,14 @@ ul {
   transform: translate(1030px, -300px);
 }
 
+.slick__prev:before {
+  content: none
+}
+
+.slick__arrow:before {
+  content: none
+}
+
 .post-new__img img {
   width: 600px;
   height: 600px;
@@ -1184,6 +1192,8 @@ ul {
 
   .content__tabs a {
     margin-right: 20px;
+    margin-right: 20px !important;
+    padding: 0;
   }
 
   .content__tabs li:last-child {
@@ -1196,6 +1206,7 @@ ul {
     color: #fff;
     position: relative;
     text-transform: uppercase;
+    border: none !important;
     font-size: 14px;
     font-weight: 300;
     letter-spacing: 0.2px;
@@ -1554,7 +1565,7 @@ ul {
 /*==============================
 	Card
 ==============================*/
-.card {
+.cards {
   margin-bottom: 30px;
 }
 
@@ -4566,6 +4577,36 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 /*==============================
 	mCustomScrollbar customization
 ==============================*/
+
+@media (max-width: 767px) {
+  .sign .profile .profile__row .profile__wrapper .profile__form .info_ticket .ant-table-wrapper .ant-table .ant-table-container .ant-table-content {
+    overflow: hidden;
+  }
+}
+
+.sign .profile .profile__row .profile__wrapper .profile__form .info_ticket .ant-table-wrapper .ant-table .ant-table-container .ant-table-content .ant-table-thead tr .ant-table-cell {
+  background-color: #FF5879;
+  color: #fff;
+  text-transform: uppercase;
+  border-collapse: collapse;
+}
+
+.sign .profile .profile__row .profile__wrapper .profile__form .info_ticket .ant-table-wrapper .ant-table .ant-table-container .ant-table-content .ant-table-tbody .ant-table-row .ant-table-cell {
+  color: #000;
+  border: 1px solid #F0F0F0;
+  border-collapse: collapse;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 82px;
+}
+
+@media (max-width: 767px) {
+  .sign .profile .profile__row .profile__wrapper .profile__form .info_ticket .ant-table-wrapper .ant-table .ant-table-container .ant-table-content .ant-table-tbody .ant-table-row .ant-table-cell {
+    max-width: 50px;
+  }
+}
+
 /* scroll bar 1 */
 .mCS-custom-bar {
   opacity: 1;

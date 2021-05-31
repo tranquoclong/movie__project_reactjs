@@ -161,8 +161,8 @@ const Profile = ({ user }) => {
   ];
   return (
     <div className="sign section--bg" data-bg="img/section/section.jpg">
-      <div className="container">
-        <div className="row">
+      <div className="container profile">
+        <div className="row profile__row">
           <div className="col-12 col-lg-4 col-xl-4 profile__min">
             <div className="profile__content">
               {/* authorization form */}
@@ -189,7 +189,7 @@ const Profile = ({ user }) => {
               {/* end authorization form */}
             </div>
           </div>
-          <div className="col-12 col-lg-8 col-xl-8">
+          <div className="col-12 col-lg-8 col-xl-8 profile__wrapper">
             {toggle ? (
               <Form
                 className="profile__form"
@@ -298,11 +298,13 @@ const Profile = ({ user }) => {
                 onSubmit={handleSubmit}
                 style={{ margin: "150px 0", padding: "50px 25px " }}
               >
-                <Table
-                  dataSource={dataSource}
-                  columns={columns}
-                  pagination={{ pageSize: 6 }}
-                />
+                <div className="info_ticket">
+                  <Table
+                    dataSource={dataSource}
+                    columns={columns}
+                    pagination={{ pageSize: 6 }}
+                  />
+                </div>
               </Form>
             )}
           </div>

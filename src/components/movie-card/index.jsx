@@ -8,7 +8,7 @@ function MovieCard({ movie, history }) {
     history.push(`/movie-detail/${movie.maPhim}`);
   };
   return (
-    <div className="card" onClick={handleClick}>
+    <div className="cards" onClick={handleClick}>
       <div className="card__cover">
         <img src={movie.hinhAnh} alt={movie.hinhAnh} />
         <Link to={movie.maPhim} className="card__play">
