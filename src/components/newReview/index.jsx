@@ -8,7 +8,7 @@ function NewReview({ movie, history }) {
   };
   return (
     <>
-      <div className="card" onClick={handleClick}>
+      <div className="cards" onClick={handleClick}>
         <div className="card__cover">
           <img src={movie.image} alt={movie.image} />
           <Link to={movie.id} className="card__play">

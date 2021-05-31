@@ -187,7 +187,7 @@ class Home extends Component {
                 </div>
               </div>
             </div>
-            <div className="container">
+            <div className="container content__cont">
               <Tabs
                 className="nav nav-tabs content__tabs tab-content"
                 defaultActiveKey="new"

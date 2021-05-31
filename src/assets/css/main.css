@@ -996,6 +996,10 @@ ul {
   padding: 0 0 20px;
 }
 
+.content .content__cont .nav-tabs {
+  border-bottom: none;
+}
+
 .content__head {
   background-color: #28282d;
   -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
@@ -1240,7 +1244,8 @@ ul {
   }
 
   .content__tabs a.active {
-    color: #fff;
+    color: #fff !important;
+    background-color: rgba(255, 0, 0, 0) !important;
   }
 
   .content__tabs a.active:before {
@@ -1502,6 +1507,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   margin-top: 5px;
+  background-color: rgba(255, 0, 0, 0);
 }
 
 .breadcrumb__item {
