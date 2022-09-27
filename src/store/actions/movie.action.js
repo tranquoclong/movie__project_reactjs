@@ -20,7 +20,7 @@ export const getMoiveList = () => {
     // call api
     axios({
       method: "GET",
-      url: "https://movie0706.cybersoft.edu.vn/api/QuanLyPhim/LayDanhSachPhimTheoNgay?maNhom=GP06&soTrang=1&soPhanTuTrenTrang=10&tuNgay=01-07-2020&denNgay=30-09-2020",
+      url: "https://movie0706.cybersoft.edu.vn/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP06",
       data: null,
     })
       .then((res) => {
